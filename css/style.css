@@ -13,7 +13,7 @@
 .principal {
 	position: relative;
 	widows: 100%;
-	min-height: 2300px;
+	min-height: 3000px;
 	background: #222;
 	justify-content: space-between;
 	align-items: center;
@@ -113,7 +113,7 @@ section .social-media li a {
 
 .titulo-secao {
 	position: relative;
-	bottom: 300px;
+	bottom: 200px;
 	text-align: center;
 	font-size: 5em;
 	font-weight: bold;
@@ -128,7 +128,7 @@ section .social-media li a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 900px;
+	height: 1600px;
 	font-family: 'Poppins', sans-serif;
 	color: #fff;
 }
@@ -140,6 +140,12 @@ section .social-media li a {
 	display: flex;
 }
 
+.portfolio .template .caixa:nth-child(5) {
+	position: relative;
+	right: 100%;
+	top: 600px;
+}
+
 .portfolio .template .caixa img {
 	height: 400px;
 	width: 250px;
@@ -147,7 +153,7 @@ section .social-media li a {
 
 .portfolio .template .caixa img:hover {
 	transition: 1s;
-	height: 500px;
+	height: 410px;
 	opacity: 1;
 }
 
