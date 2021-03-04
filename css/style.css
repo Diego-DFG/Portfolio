@@ -277,7 +277,7 @@ footer .contato span {
 @media (max-width: 639px) {
 
 	.principal {
-		height: 4680px;
+		height: 4280px;
 		width: 100%;
 		right: 10px;
 	}
@@ -319,31 +319,20 @@ footer .contato span {
 		position: relative;
 		font-size: 2.6em;
 		left: 10px;
-		bottom: 50px;
+		bottom: 10px;
 	}
 
 	.portfolio {
-		height: 1226px;
+		height: 826px;
 	}
 
 	.portfolio .template {
 		display: block;
 	}
 
-	.portfolio .template .caixa:nth-child(5) {
-		position: relative;
-		top: 1100px;
-	}
-
 	.portfolio .template .caixa img {
 		height: 300px;
 		width: 150px;
-	}
-
-	.portfolio .template .caixa img:hover {
-		transition: 1s;
-		height: 310px;
-		opacity: 1;
 	}
 
 	.portfolio .template .caixa {
@@ -427,11 +416,6 @@ footer .contato span {
 	.portfolio .template .caixa img {
 		height: 400px;
 		width: 250px;
-	}
-
-	.portfolio .template .caixa:nth-child(5) {
-		position: relative;
-		top: 1200px;
 	}
 
 	.portfolio .template {
