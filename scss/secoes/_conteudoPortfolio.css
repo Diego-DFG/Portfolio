@@ -1,0 +1,95 @@
+.laranja {
+  color: tomato;
+}
+
+.btn-portfolio {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 15rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 3rem;
+  padding-left: 2.2rem;
+  border-radius: 1rem;
+  width: 3rem;
+  background: linear-gradient(50deg, #125D98, #3C8DAD);
+}
+.btn-portfolio:hover {
+  border: 1px solid #fff;
+}
+
+.conteudo__titulo {
+  color: #333;
+  width: 7%;
+  font-weight: bold;
+  line-height: 2;
+  border-bottom: 4px solid #125D98;
+  font-size: 2rem;
+  margin: 2rem 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*******************************************************************/
+.conteudo {
+  height: 75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.conteudo__destaque {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/code__04.jpeg") no-repeat center/cover;
+}
+.conteudo__destaque .destaque__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo__destaque .destaque__container-titulo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-family: "Staatliches", cursive;
+  width: 100%;
+}
+.conteudo .conteudo__portfolio {
+  height: 45rem;
+}
+.conteudo .conteudo__portfolio .conteudo__portfolio-container {
+  height: 40rem;
+  display: flex;
+  margin: 0 2rem;
+  justify-content: space-between;
+}
+.conteudo .conteudo__portfolio .conteudo__portfolio-container .portfolio__caixa {
+  height: 35rem;
+  width: 18rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.conteudo .conteudo__portfolio .conteudo__portfolio-container .portfolio__caixa:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+}
+.conteudo .conteudo__portfolio .conteudo__portfolio-container .portfolio__caixa .portfolio__caixa-titulo {
+  height: 7%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.conteudo .conteudo__portfolio .conteudo__portfolio-container .portfolio__caixa .portfolio__caixa-img {
+  height: 93%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=_conteudoPortfolio.css.map */

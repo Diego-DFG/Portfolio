@@ -1,0 +1,11 @@
+{
+  "name": "portfolio__v_2.0",
+  "version": "2.0.0",
+  "description": "version 2.0 of the my webdev portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

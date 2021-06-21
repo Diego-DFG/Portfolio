@@ -1,0 +1,110 @@
+// Cores
+$preto: #333;
+$branco: #fff;
+$laranja: tomato;
+$azul-claro: #3C8DAD;
+$azul-escuro: #125D98;
+.laranja {
+    color: $laranja;
+}
+
+// Fontes
+$conteudo-fonte: Arial, Helvetica, sans-serif;
+$destaque-fonte: 'Staatliches', cursive;
+$btn-portfolio-fonte: 'Montserrat', sans-serif;
+
+// Btn-portfolio
+.btn-portfolio {
+    color: $branco;
+    font-family: $btn-portfolio-fonte;
+    margin-right: 15rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 3rem;
+    padding-left: 2.2rem;
+    border-radius: 1rem;
+    width: 3rem;
+    background: linear-gradient(50deg, $azul-escuro, $azul-claro);
+
+    &:hover {
+        border: 1px solid $branco;
+    }
+}
+
+// conteudo__titulo
+.conteudo__titulo {
+    color: $preto;
+    width: 7%;
+    font-weight: bold;
+    line-height: 2;
+    border-bottom: 4px solid $azul-escuro;
+    font-size: 2rem;
+    margin: 2rem 4rem;
+    font-family: $btn-portfolio-fonte;
+}
+
+/*******************************************************************/
+
+// Conteúdo
+
+.conteudo {
+    height: 75rem;
+    font-family: $conteudo-fonte;
+    margin-bottom: 2rem;
+
+    &__destaque {
+        height: 32rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        align-items: center;
+        background: linear-gradient(rgba(0,0,0,0.6), 
+        rgba(0,0,0,0.6)),url('../../img/code__03.jpeg')no-repeat center/cover; 
+
+        .destaque__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-titulo {
+                color: $branco;
+                font-size: 3rem;
+                font-weight: bold;
+                line-height: 1.3;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                font-family: $destaque-fonte;
+                width: 100%;
+            }
+        }
+    }
+
+    &__sobre {
+            height: 38rem;
+
+        &-container {
+            display: flex;
+            margin: auto;
+            height: 90%;
+            width: 70%;
+            border-radius: 0.5rem;
+            background: rgba(0, 0, 0, 0.04);
+        }
+    
+        &-img {
+            margin: 4rem 3rem;
+            height: 25rem;
+            width: 16rem;
+            border-radius: 1rem;
+        }
+
+        &-par {
+            width: 50%;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin: 10rem auto;
+        }
+    }
+}

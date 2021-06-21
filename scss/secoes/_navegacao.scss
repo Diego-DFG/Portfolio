@@ -1,0 +1,100 @@
+$preto: black;
+$branco: #fff;
+$azul-claro: #3C8DAD;
+$azul-escuro: #125D98;
+
+$links-fonte: 'Montserrat', sans-serif;
+
+.navegacao {
+    display: flex;
+    height: 6rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border-radius: 0.1rem;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+
+    &__conteudo {
+        display: flex;
+        width: 50%;
+        margin-left: 2rem;
+        justify-content: space-between;
+
+        &-logo {
+            position: relative;
+            right: 3rem;
+            top: 1rem;
+            height: 100%;
+            width: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                &__01, &__02 {
+                    display: flex;
+                    color: $branco;
+                    font-size: 2rem;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $branco;
+                    border-radius: 0.5rem;
+                    height: 3rem;
+                    width: 3rem;
+                    background: linear-gradient(50deg, $azul-escuro, $azul-claro);
+                }
+
+                &__01 {
+                    margin-right: 2rem;
+                    z-index: 9999;
+                }
+
+                &__02 {
+                    position: relative;
+                    bottom: 0.5rem;
+                }
+            }
+        }
+
+        &_toggle-btn {
+            display: none;
+           /* display: flex;
+            width: 5rem;
+            justify-content: center;
+            align-items: center;*/
+
+            .btn-toggle {
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                border: 3px solid rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+
+    &__lista {
+        width: 70%;
+        margin-right: 11rem;
+        display: flex;
+        align-items: center;
+
+        &-links {
+            padding: 1rem 1rem;
+            margin-left: 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-family: $links-fonte;
+        }
+
+        .active, &-links:hover {
+            box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .active {
+            color: $azul-escuro;
+            font-weight: bold;
+        }
+    }
+}
+

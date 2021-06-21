@@ -1,0 +1,112 @@
+// Cores
+$branco: #fff;
+$cinza: #999;
+$laranja: tomato;
+$vermelho: #F54748;
+$verde: green;
+$azul-claro: #2940D3;
+$azul-dark: #293B5F;
+$azul-middle-dark: #47597E;
+
+// Fontes
+$links-fonte: 'Montserrat', sans-serif;
+$copyright-fonte: Arial, Helvetica, sans-serif;
+
+// Redes sociais
+
+.facebook {
+    color: $branco;
+    background: $azul-claro;
+    border-radius: 50%;
+}
+
+
+.instagram {
+    background: $laranja;
+    border-radius: 50%;
+}
+
+.whatsapp {
+    background: $verde;
+    border-radius: 50%;
+}
+
+.mail {
+    background: $vermelho;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+}
+
+/*********************************************************************************/
+
+// Rodapé
+
+.rodape {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    background: $azul-dark;
+
+    &__container {
+        height: 70%;
+        width: 70%;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $azul-dark;
+
+        &-redes_sociais {
+            color: $branco;
+            margin-left: 5rem;
+            margin-top: 2rem;
+            .redes {
+                margin-right: 2rem;
+                padding: 0.5rem 0.6rem;
+                cursor: pointer;
+            }
+        }
+
+        &-lista {
+            margin-top: 2rem;
+            margin-left: 3rem;
+
+            .rodape__container-links {
+                color: $branco;
+                margin-right: 1rem;
+                text-decoration: none;
+                font-family: $links-fonte;
+            }
+        }
+
+        .copyright {
+            color: $cinza;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            font-family: $copyright-fonte;
+        }
+    }
+
+    .btn__page-up {
+        height: 3rem;
+        width: 6rem;
+        font-size: 1.5rem;
+        color: $branco;
+        cursor: pointer;
+        text-align: center;
+        line-height: 2;
+        border-top-left-radius: 0.2rem;
+        border-bottom-left-radius: 0.2rem;
+        background: $azul-dark;
+        border: 1px solid $branco;
+        position: relative;
+        left: 10rem;
+        top: 9rem;
+
+        &:hover {
+            color: $azul-dark;
+            background: $branco;
+            border: 1px solid $azul-dark;
+        }
+    }
+}
