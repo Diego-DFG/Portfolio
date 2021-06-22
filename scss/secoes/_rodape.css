@@ -4,6 +4,19 @@
   border-radius: 50%;
 }
 
+.linkedin {
+  color: #fff;
+  background: #2940D3;
+  border-radius: 50%;
+}
+
+.github {
+  color: #fff;
+  font-size: 2.5rem;
+  background: #293B5F;
+  border-radius: 50%;
+}
+
 .instagram {
   background: tomato;
   border-radius: 50%;

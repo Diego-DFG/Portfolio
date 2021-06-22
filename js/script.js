@@ -28,6 +28,8 @@
 
                 console.log(redeClicada);
 
+                const linkedin = document.querySelector('.linkedin');
+                const github = document.querySelector('.github');
                 const facebook = document.querySelector('.facebook');
                 const instagram = document.querySelector('.instagram');
                 const whatsapp = document.querySelector('.whatsapp');
@@ -40,9 +42,13 @@
                 } else if(redeClicada === instagram) {
                     window.location.href = 'https://www.instagram.com/dfgsolutions/';
                 } if(redeClicada === whatsapp) {
-                    window.location.href = 'https://api.whatsapp.com/send?1=pt_BR&phone=5521992889796/&text=Olá!%20Quero%20uma%20solução%20para%20o%20meu%20negóci';
+                    window.location.href = 'https://api.whatsapp.com/send?1=pt_BR&phone=5521992889796/&text=Olá!%20Diego';
                 } if(redeClicada === mail) {
                     window.location.href = 'https://www.gmail.com.br';
+                } if(redeClicada === github) {
+                    window.location.href = 'https://github.com/Diego-DFG';
+                } if(redeClicada === linkedin) {
+                    window.location.href = 'https://www.linkedin.com/in/diego-faria-gomes-a10832179/';
                 }
     
             });
