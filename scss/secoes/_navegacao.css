@@ -64,6 +64,7 @@
   align-items: center;
 }
 .navegacao__lista-links {
+  color: rgba(0, 0, 0, 0.9);
   padding: 1rem 1rem;
   margin-left: 1rem;
   border-radius: 0.5rem;

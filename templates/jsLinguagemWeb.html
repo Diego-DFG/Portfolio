@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Gomes Portfolio</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="../css/bibliotecas/reset.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../scss/base/base.css">
+    <link rel="stylesheet" href="../scss/secoes/_navegacao.css">
+    <link rel="stylesheet" href="../scss/secoes/_conteudoTutoriaisArtigos.css">
+    <link rel="stylesheet" href="../scss/secoes/_rodape.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navegacao">
+        <nav class="navegacao__conteudo">
+            <div class="navegacao__conteudo-logo logo">
+                <div class="logo__01">
+                    <h1 class="logo">D</h1>
+                </div>
+                <div class="logo__02">
+                    <h1 class="logo">G</h1>
+                </div>
+            </div>
+            <div class="navegacao__conteudo_toggle-btn">
+                <div class="btn-toggle">
+                    <a href=""><i class="bars fas fa-bars"></i></a>
+                    <a href=""><i class="times fas fa-times"></i></a>
+                </div>
+            </div>
+        </nav>
+        <ul class="navegacao__lista">
+            <a class="navegacao__lista-links active" href="../index.html">Sobre</a>
+            <a class="navegacao__lista-links" href="../portfolio.html">Portfolio</a>
+            <a class="navegacao__lista-links" href="../tutoriais.html">Blog</a>
+            <a class="navegacao__lista-links" href="../contato.html">Contato</a>
+        </ul>
+    </header>
+    <main class="conteudo">
+        <div class="conteudo__tutoriais">
+            <h1 class="conteudo__titulo">Blog</h1>
+            <div class="conteudo__tutoriais-container">
+                <div class="conteudo__tutoriais-container-principal container-principal">
+                    <img class="container-principal-img" alt="">
+                    <div class="container-principal-descricao">
+                        <h2 class="descricao-titulo">JavaScript - A linguagem da web</h2>
+                        <p class="descricao-par">
+                            Sites com um visual invejável e cheios de conteúdo? 
+                            nem sempre foi assim. Neste post vamos mergulhar no 
+                            mundo de uma linguagem que certamente mudou a forma 
+                            de interagir com a web, o <strong class='text__bold'>JavaScript.</strong>
+                        </p>
+                        <h3 class="descricao-subtitulo">O início de tudo</h3>
+                        <p class="descricao-par">
+                            Bem ... nos primórdios da internet, ano de 1995, um 
+                            programador formado em matemática e ciências da computação 
+                            pela Universidade de Santa Clara chamado Brendan Eich 
+                            (também um dos fundadores da Mozilla em 1998) foi contratado 
+                            pela NetScape Corporation (produtora do primeiro navegador 
+                            comercial em 1994, o NetScape Navigator) no desenvolvimento 
+                            de um projeto chamado Mocha (.. e também de LiveScript um tempo depois), 
+                            cujo objetivo era tornar a navegação na internet mais dinâmica, e então 
+                            surgiu a primeira “pegada” do JavaScript. Na época a web era estática,
+                            se resumindo a conteúdo de texto com poucas imagens estáticas, um ambiente
+                            extremamente entediante para os padrões atuais.
+                        </p>
+                        <h3 class="descricao-subtitulo">Deriva do JAVA?</h3>
+                        <p class="descricao-par">
+                            Na realidade acredita-se que o nome JavaScript foi uma estratégia de marketing, 
+                            visto que na época a linguagem JAVA tinha sido lançada recente, portanto JAVA e 
+                            JAVASCRIPT não possuem nenhuma ligação. 
+                        </p>
+                        <h3 class="descricao-subtitulo">De patinho feio a queridinha da web</h3>
+                        <p class="descricao-par">
+                            Por ser uma linguagem desenvolvida para a web, no contexto da década de 90,
+                            o javascript não se notabilizou como linguagem "confiável" em seu início de jornada,
+                            pois diferentemente de linguagens mais robustas como JAVA, C e C# por exemplo, não
+                            possui checagem de tipos (sendo possível uma variável iniciado com números inteiros
+                            receber um valor string por exemplo) e de sua característica <strong class="text__bold">Single-Thread</strong>, fator
+                            bloqueante para execução de multiplos processamentos (possui apenas uma fila de execução).
+                        </p>
+                        <p class="descricao-par">
+                            Porém com o surgimento do V8 (engine desenvolvida pelo google para multiprocessamento no javascript), 
+                            foi permitido ao javascript a execução de tarefas de multiprocessamento Isso ocorre pelo fato de na 
+                            thread do javascript são executadas tarefas não-bloqueantes, e para tarefas assíncronas e
+                            bloqeuantes como "callbacks" e "promises" por exemplo, serem executadas com o apoio de uma web API
+                            desenvolvida em C++. Esse foi o ponto de virada na jornada do javascript para se tornar Hoje
+                            a linguagem mais utilizada segundo relatórios anuais do Stackoverflow.
+                        </p>
+                        <h3 class="descricao-subtitulo">Como funciona o JavaScript?</h3>
+                        <p class="descricao-par">
+                            Por ser uma linguagem de script, o javascript é inserido através de uma tag de 
+                            script em um arquivo HTML, que é representado no navegador através da árvore do 
+                            DOM(Data Object Model – Um objeto que permite aos navegadores a interpretação de 
+                            arquivos HTML). Hoje em dia, a maioria dos navegadores possuem integrados os 
+                            recursos que permitem a interpretação de código javascript.gem JAVA tinha sido 
+                            lançada recente, portanto JAVA e JAVASCRIPT não possuem nenhuma ligação. 
+                        </p>
+                        <h3 class="descricao-subtitulo">Em que projetos aplico o JavaScript?</h3>
+                        <p class="descricao-par">
+                            O javascript permite o carregamento de recursos da web de forma assíncrona 
+                            (sem a necessidade de recarregar toda a página, o famoso “F5”), facilitando o 
+                            tráfego de informações entre sites e sistemas web com um ótimo desempenho e 
+                            economia de recursos. Esse carregamento assíncrono é realizado através de 
+                            AJAX (Assynchronous Javascript and XML), onde os dados são transportados em 
+                            formato JSON (objeto possuindo apenas chave e valor) e protocolo Websocket.
+                        </p>
+                        <p class="descricao-bibliografia">
+                            FONTES BIBLIOGRÁFICAS:https://en.wikipedia.org/wiki/JavaScript
+                        </p>
+                    </div>
+                </div>
+                <div class="conteudo__tutoriais-container-artigos">
+                    <h2 class="descricao-titulo titulo-artigos">Categorias</h2>
+                        <a href="" class="descricao-par par-artigos">
+                            Desenvolvimento web 
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <a href="" class="descricao-par par-artigos">
+                            Hospedagem e Deploy 
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <a href="" class="descricao-par par-artigos">
+                            Infraestrutura 
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <a href="" class="descricao-par par-artigos">
+                            Soft kills 
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__container">
+            <div class="rodape__container-redes_sociais">
+                <i class="redes github fab fa-github fa-2x"></i>
+                <i class="redes linkedin fab fa-linkedin fa-2x"></i>
+                <i class="redes instagram fab fa-instagram fa-2x"></i>
+                <i class="redes whatsapp fab fa-whatsapp fa-2x"></i>
+                <i class="redes facebook fab fa-facebook fa-2x"></i>
+                <i class="redes mail fas fa-envelope fa-2x"></i>
+            </div>
+            <ul class="rodape__container-lista">
+                <a class="rodape__container-links active" href="">Sobre</a>
+                <span class="rodape__container-links active">-</span>
+                <a class="rodape__container-links" href="">Serviços</a>
+                <span class="rodape__container-links active">-</span>
+                <a class="rodape__container-links" href="">Tutoriais</a>
+                <span class="rodape__container-links active">-</span>
+                <a class="rodape__container-links" href="">Contato</a>
+            </ul>
+            <p class="copyright">&copy;DFG Solutions - 2021</p>
+        </div>
+        <a class="btn__page-up" href=""><i class="fas fa-angle-up"></i></a>
+    </footer>
+
+    <!-- Blibliotecas JS -->
+    <script src="../js/fontawesome-all.js"></script>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

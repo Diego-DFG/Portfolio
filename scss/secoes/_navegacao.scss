@@ -2,6 +2,7 @@ $preto: black;
 $branco: #fff;
 $azul-claro: #3C8DAD;
 $azul-escuro: #125D98;
+$color-links: rgba(0, 0, 0, 0.9);
 
 $links-fonte: 'Montserrat', sans-serif;
 
@@ -80,6 +81,7 @@ $links-fonte: 'Montserrat', sans-serif;
         align-items: center;
 
         &-links {
+            color: $color-links;
             padding: 1rem 1rem;
             margin-left: 1rem;
             border-radius: 0.5rem;

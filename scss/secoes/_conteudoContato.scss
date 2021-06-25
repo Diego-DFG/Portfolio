@@ -13,18 +13,21 @@ $destaque-fonte: 'Staatliches', cursive;
 $btn-portfolio-fonte: 'Montserrat', sans-serif;
 
 // Btn-portfolio
-.btn-portfolio {
+.btn-contato {
     color: $branco;
+    cursor: pointer;
+    margin: 0 auto;
+    border: none;
     font-family: $btn-portfolio-fonte;
     margin-right: 15rem;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    padding: 1rem 3rem;
+    height: 2rem;
+    width: 97%;
     padding-left: 2.2rem;
-    border-radius: 1rem;
-    width: 3rem;
-    background: linear-gradient(50deg, $azul-escuro, $azul-claro);
+    border-radius: 0.2rem;
+    background: rgba(0, 0, 0, 0.3);
 
     &:hover {
         border: 1px solid $branco;
@@ -43,7 +46,7 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
 // conteudo__titulo
 .conteudo__titulo {
     color: $preto;
-    width: 7%;
+    width: 10%;
     font-weight: bold;
     line-height: 2;
     border-bottom: 4px solid $azul-escuro;
@@ -112,6 +115,8 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
         }
 
         &-input {
+            display: flex;
+            flex-direction: column;
             width: 50%;
             font-size: 1.3rem;
             line-height: 1.6;
@@ -126,6 +131,7 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
 
 .input__contato-nome, .input__contato-email, .input__contato-textarea {
     margin-bottom: 2rem;
+    margin-right: 1rem;
     background: $color-input;
     border-radius: 0.5rem;
     border:  1px solid $color-input;

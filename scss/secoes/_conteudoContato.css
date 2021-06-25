@@ -1,17 +1,20 @@
-.btn-portfolio {
+.btn-contato {
   color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
   font-family: "Montserrat", sans-serif;
   margin-right: 15rem;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  padding: 1rem 3rem;
+  height: 2rem;
+  width: 97%;
   padding-left: 2.2rem;
-  border-radius: 1rem;
-  width: 3rem;
-  background: linear-gradient(50deg, #125D98, #3C8DAD);
+  border-radius: 0.2rem;
+  background: rgba(0, 0, 0, 0.3);
 }
-.btn-portfolio:hover {
+.btn-contato:hover {
   border: 1px solid #fff;
 }
 
@@ -23,7 +26,7 @@
 
 .conteudo__titulo {
   color: #333;
-  width: 7%;
+  width: 10%;
   font-weight: bold;
   line-height: 2;
   border-bottom: 4px solid #125D98;
@@ -83,6 +86,8 @@
   border-radius: 1rem;
 }
 .conteudo__contato-input {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   font-size: 1.3rem;
   line-height: 1.6;
@@ -95,6 +100,7 @@
 
 .input__contato-nome, .input__contato-email, .input__contato-textarea {
   margin-bottom: 2rem;
+  margin-right: 1rem;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.03);
