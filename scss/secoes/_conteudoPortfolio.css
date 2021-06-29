@@ -32,7 +32,7 @@
 
 /*******************************************************************/
 .conteudo {
-  height: 75rem;
+  height: 115rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 .conteudo__destaque {
@@ -60,7 +60,7 @@
   width: 100%;
 }
 .conteudo .conteudo__portfolio {
-  height: 45rem;
+  height: 85rem;
 }
 .conteudo .conteudo__portfolio .conteudo__portfolio-container {
   height: 40rem;
@@ -90,6 +90,9 @@
   height: 93%;
   width: 100%;
   border-radius: 0.5rem;
+}
+.conteudo .conteudo__portfolio .portfolio__caixa-02 {
+  display: flex;
 }
 
 /*# sourceMappingURL=_conteudoPortfolio.css.map */

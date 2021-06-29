@@ -52,40 +52,12 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
 // Conteúdo
 
 .conteudo {
-    height: 110rem;
+    height: 130rem;
     font-family: $conteudo-fonte;
     margin-bottom: 2rem;
 
-    &__destaque {
-        height: 32rem;
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        align-items: center;
-        background: linear-gradient(rgba(0,0,0,0.6), 
-        rgba(0,0,0,0.6)),url('../../img/study__01.jpeg')no-repeat center/cover; 
-
-        .destaque__container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            &-titulo {
-                color: $branco;
-                font-size: 3rem;
-                font-weight: bold;
-                line-height: 1.3;
-                margin: 0 auto;
-                margin-bottom: 1rem;
-                font-family: $destaque-fonte;
-                width: 100%;
-            }
-        }
-    }
-
     &__tutoriais {
-            height: 70rem;
+            height: 100%;
 
             &-container {
                 display: flex;
@@ -93,52 +65,45 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
                 width: 100%;
 
                 &-principal {
-                    margin-left: 2rem;
-                    height: 100%;
                     display: flex;
                     flex-direction: column;
+                    height: 100%;
+                    width: 65%;
+                    margin-left: 1rem;
+                    border-radius: 0.5rem;
+                    background: rgba(0, 0, 0, 0.04);
 
-                    .container-principal {
-                        height: 100%;
-                        width: 80%;
-                        margin-left: 1rem;
-                        border-radius: 0.5rem;
-                        background: rgba(0, 0, 0, 0.04);
-
-                        &:nth-child(2) {
-                            margin-top: 2rem;
-                        }
-                    }
                     .container-principal-img {
-                        height: 50%;
+                        height: 25%;
                         width: 100%;
                         border-top-left-radius: 0.5rem;
                         border-top-right-radius: 0.5rem;
                         background: linear-gradient(rgba(0,0,0,0.6), 
-                        rgba(0,0,0,0.6)),url('../../img/tutoriais__00.jpeg')no-repeat center/cover; 
-                        
-                        
-                    }
-
-                    .progAssincrona {
-                        background: linear-gradient(rgba(0,0,0,0.6), 
-                        rgba(0,0,0,0.6)),url('../../img/assincrono__02.jpg')no-repeat center/cover;
+                        rgba(0,0,0,0.6)),url('../../img/assincrono__02.jpg')no-repeat center/cover; 
                     }
 
                     .container-principal-descricao {
-
-                        .descricao-titulo {
-                            font-size: 2rem;
+                        height: 75%;
+                        .descricao-titulo, .descricao-subtitulo {
                             margin: 2rem 0;
                             margin-left: 0.5rem;
                         }
 
-                        .descricao-par {
-                            margin: 0 1rem;
+                        .descricao-titulo {
+                            font-size: 2rem;
                         }
 
-                        .primeiro-par {
-                            margin-bottom: 2rem;
+                        .descricao-subtitulo {
+                            font-size: 1.5rem;
+                        }
+
+                        .descricao-par {
+                            margin: 0 1rem;
+                            line-height: 1.6;
+                        }
+
+                        .descricao-bibliografia {
+                            margin: 2rem 1rem;
                         }
                     }
 
@@ -153,7 +118,7 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
                         align-items: center;
                         justify-content: center;
                         color: $branco;
-                        left: 41rem;
+                        left: 45.5rem;
                         background: linear-gradient(50deg, $azul-escuro, $azul-claro);
 
                     }
@@ -167,9 +132,9 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
                 &-artigos {
                     display: flex;
                     flex-direction: column;
-                    height: 100%;
-                    width: 60%;
-                    margin-right: 2rem;
+                    height: 35rem;
+                    width: 30%;
+                    margin-left: 2rem;
                     border-radius: 0.5rem;
                     background: rgba(0, 0, 0, 0.07);
 

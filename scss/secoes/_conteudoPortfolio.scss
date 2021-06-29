@@ -49,7 +49,7 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
 // Conteúdo
 
 .conteudo {
-    height: 75rem;
+    height: 115rem;
     font-family: $conteudo-fonte;
 
     &__destaque {
@@ -81,7 +81,7 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
     }
 
     .conteudo__portfolio {
-        height: 45rem;
+        height: 85rem;
 
         .conteudo__portfolio-container {
             height: 40rem;
@@ -115,6 +115,10 @@ $btn-portfolio-fonte: 'Montserrat', sans-serif;
                     border-radius: 0.5rem;
                 }
             }
+        }
+
+        .portfolio__caixa-02 {
+            display: flex;
         }
     }
    
