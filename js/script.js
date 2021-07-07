@@ -1,5 +1,7 @@
 (window.onload = () => {
 
+
+    /* Botão topo página */
     const btnIndex = document.querySelector('.btn__page-up');
 
     topoPagina(btnIndex);
@@ -16,6 +18,47 @@
         
     }
 
+    /* Botão de menu responsivo para telas pequenas */
+
+    btnMenuResponsivo();
+    function btnMenuResponsivo() {
+
+        const bars = document.querySelector('.bars');
+        const times = document.querySelector('.times');
+        const navegacao = document.querySelector('.navegacao');
+        const lista = document.querySelector('.navegacao__lista');
+        const btnToggle = document.querySelector('.navegacao__conteudo_toggle-btn');
+
+        var clicked = false;
+        
+        btnToggle.addEventListener('click', function(e) {
+
+            e.preventDefault();
+
+            if(clicked) {
+                bars.style.display='flex';
+                times.style.display='none';
+                lista.classList.remove('displayShow');
+                navegacao.style.height='10rem';
+                clicked = false;
+                console.log(clicked);
+            } else {
+                bars.style.display='none';
+                times.style.display='flex';
+                lista.classList.add('displayShow');
+                navegacao.style.height='100vh';
+                clicked = true; 
+                console.log(clicked);
+            }
+
+
+        });
+
+    }
+
+    /* Redirecionamento dos botões de redes sociais */
+
+    redirecionar();
     function redirecionar() {
 
         const rede = document.querySelectorAll('.redes');
@@ -57,6 +100,8 @@
 
     }
 
+    /* Efeito de typewriting */
+
     function typeWriter(element, speed) {
 
         var texto = element.innerHTML;
@@ -83,9 +128,5 @@
     typeWriter(titulo__01, speed);
     typeWriter(titulo__02, speed*1.5);
     typeWriter(titulo__03, speed*2);
-
-    
-    redirecionar();
-    
 
 })();

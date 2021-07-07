@@ -1,5 +1,7 @@
 @import '../secoes/navegacao', '../secoes/conteudo', '../secoes/rodape';
 
+@import '../breakpoints/for_phone_only';
+
 body {
     overflow-x: hidden;
 }

@@ -55,19 +55,35 @@
                         <h2 class="descricao-titulo">Programação Assíncrona</h2>
                         <p class="descricao-par">
                             Já parou para pensar em como um código de programação funciona por padrão?
-                            Normalmente se temos por exemplo, a excução de uma função, o restante do código,
+                            Normalmente se temos por exemplo, a excução de uma função, o restante do código
                             após aquela função irá aguardar a execução da mesma para que se possa dar seguimento
                             à execução total, funcionando como em um restaurante onde se tem diversos pedidos e 
-                            apenas um único garçon para atendê-los. Esse é um exemplo de execução
-                            <strong class="text__bold">Síncrona</strong>
+                            apenas um único garçom para atendê-los. Esse é um exemplo de execução
+                            <strong class="text__bold">Síncrona</strong>. É razoável pensarmos que em tempos
+                            de computadores com grandes poderes de processamento, possamos realizar tarefas
+                            de forma paralela, onde enquanto realizamos algo, o computador possa processar uma outra
+                            tarefa, surge então a idéia de processamento <strong class="text__bold">Assíncrono</strong>.
                         </p>
-                        <h3 class="descricao-subtitulo"></h3>
+                        <h3 class="descricao-subtitulo">Código "bloqueante"</h3>
                         <p class="descricao-par">
-                            
+                            Quando aplicações web executam um trecho de código, e o navegador permanece aparentemente inativo,
+                            como se estivesse "congelado", na verdade o que ocorre é que o mesmo aguarda o processamento 
+                            do recurso para depois dar seguimento à execução da aplicação. Chamamos esses códigos de 
+                            <strong class="text__bold">bloqueantes</strong>, justamente por, neste exemplo, deixar o navegador ocioso
+                             enquanto um determinado processo é executado em paralelo. No exemplo abaixo, retirado da documentação MDN da Mozilla,
+                            podemos perceber que, enquanto as 10 milhões de datas não são processadas, o navegador não processa
+                            o log de uma das datas, e nem adiciona o parágrafo na página. Faça o teste!
                         </p>
-                        <h3 class="descricao-subtitulo"></h3>
+                        <br>
+                        <img src="../img/mozilla_assincrono.jpg" alt="">
+                        <h3 class="descricao-subtitulo">Threads</h3>
                         <p class="descricao-par">
-                            
+                            Para entendermos melhor a motivação de o Javascript ser "bloqueante",
+                            é necessário conhecermos mais sobre o conceito de <strong class="text__bold">Threads</strong>.
+                            Podemos entender <strong class="text__bold">threads</strong> como a disponibilidade do processador
+                            do computador para execução das tarefas a ele solicitadas pelos softwares em execução, como o Javascript
+                            é single-thread, os programas escritos utilizam o processador de forma sequencial, um após o outro,
+                            o que pode ser um grande problema para projetos de software com grande quantidade de processamento.
                         </p>
                         <h3 class="descricao-subtitulo"></h3>
                         <p class="descricao-par">
